@@ -42,12 +42,10 @@ header {
 }
 
 nav {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  padding: 0.75rem;
-  background-color: rgba(0, 0, 0, 0.2);
+  display: none;
+  flex-direction: column;
+  background-color: var(--primary-color);
+  padding: 0.5rem 0;
 }
 
 nav a {
@@ -55,8 +53,7 @@ nav a {
   text-decoration: none;
   font-size: 1.1rem;
   font-weight: 700;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
+  padding: 0.75rem 1rem;
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
 }
 
@@ -67,8 +64,8 @@ nav a:hover, nav a:focus {
 }
 
 main {
-  max-width: 900px;
-  margin: 2.5rem auto;
+  max-width: 400px;
+  margin: 2rem auto;
   padding: 0 1rem;
 }
 

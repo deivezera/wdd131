@@ -3,22 +3,6 @@
   --temple-shadow: rgba(0, 0, 0, 0.1);
 }
 
-body {
-  font-family: var(--font-body);
-  background-color: var(--background-color);
-  color: var(--text-color);
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-}
-
-header {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-  padding: 1rem;
-  text-align: center;
-}
-
 header h1 {
   font-family: var(--font-heading);
   font-size: 1.75rem;
@@ -37,28 +21,8 @@ header h1 {
   right: 1rem;
 }
 
-nav {
-  display: none;
-  flex-direction: column;
-  background-color: var(--primary-color);
-  padding: 0.5rem 0;
-}
-
 nav.open {
   display: flex;
-}
-
-nav a {
-  color: var(--secondary-color);
-  text-decoration: none;
-  padding: 0.75rem 1rem;
-  transition: background-color 0.3s ease;
-}
-
-nav a:hover, nav a:focus {
-  background-color: var(--accent-color);
-  color: var(--primary-color);
-  transform: translateY(-2px);
 }
 
 main {
@@ -100,14 +64,6 @@ figcaption {
   text-align: center;
   font-weight: 600;
   color: var(--primary-color);
-}
-
-footer {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-  text-align: center;
-  padding: 1.5rem;
-  margin-top: 2rem;
 }
 
 footer p {
