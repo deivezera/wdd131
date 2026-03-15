@@ -7,6 +7,9 @@
   
   --font-heading: 'Playfair Display', serif;
   --font-body: 'Roboto', sans-serif;
+
+  --temple-card-bg: white;
+  --temple-shadow: rgba(0, 0, 0, 0.1);
 }
 
 * {
