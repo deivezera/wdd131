@@ -44,11 +44,27 @@ header {
   margin-bottom: 1.25rem;
 }
 
+#menu-button {
+  display: block;
+  background: none;
+  border: none;
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
 nav {
   display: none;
   flex-direction: column;
   background-color: var(--primary-color);
   padding: 0.5rem 0;
+}
+
+nav.open {
+  display: flex;
 }
 
 nav a {
@@ -162,4 +178,41 @@ footer p {
   font-size: 0.95rem;
   font-style: italic;
   margin-top: 1rem;
+}
+
+@media screen and (min-width: 500px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: relative;
+  }
+
+  #course-title {
+    margin-bottom: 0;
+    font-size: 1.75rem;
+  }
+
+  #menu-button {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    gap: 0.5rem;
+    padding: 0.75rem;
+  }
+
+  nav a {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+  }
+
+  nav a:hover {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+  }
 }
