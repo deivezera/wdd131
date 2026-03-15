@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temple Album - Davi Szeremeta Zabroski</title>
+  <meta name="description" content="Photo album displaying LDS temples from around the world">
+  <meta name="author" content="Davi Szeremeta Zabroski">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/temples.css">
+  <link rel="stylesheet" href="styles/temples-large.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Temple Album</h1>
+    <button id="menu-button" aria-label="Toggle menu">☰</button>
+    <nav id="menu">
+      <a href="/">Home</a>
+      <a href="#">Old</a>
+      <a href="#">New</a>
+      <a href="#">Large</a>
+      <a href="#">Small</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Temple Album</h2>
+    <div class="temple-grid">
+      <figure>
+        <img src="images/temples/curitiba-temple.jpg" alt="Curitiba Brazil Temple" loading="lazy">
+        <figcaption>Curitiba Brazil Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temples/fortaleza-temple.png" alt="Fortaleza Brazil Temple" loading="lazy">
+        <figcaption>Fortaleza Brazil Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temples/maceio-temple.jpg" alt="Maceio Brazil Temple" loading="lazy">
+        <figcaption>Maceio Brazil Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temples/roma-temple.jpg" alt="Rome Italy Temple" loading="lazy">
+        <figcaption>Rome Italy Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temples/san-diego-temple.jpg" alt="San Diego California Temple" loading="lazy">
+        <figcaption>San Diego California Temple</figcaption>
+      </figure>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Davi Szeremeta Zabroski Curitiba, Brasil</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
