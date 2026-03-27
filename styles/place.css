@@ -160,6 +160,7 @@
     order: 2;
     margin-bottom: 1.5rem;
   }
+
   .place-hero picture,
   .place-hero img {
     width: 100%;
@@ -167,7 +168,6 @@
     max-height: 300px;
     object-fit: cover;
   }
-
 
   .place-layout {
     grid-template-columns: 1fr;
@@ -228,9 +228,5 @@
   .place-data div,
   .place-weather div {
     grid-template-columns: auto 1fr;
-  }
-
-  .card {
-    padding: 1rem;
   }
 }
