@@ -46,6 +46,12 @@
   font-weight: 700;
 }
 
+.place-weather h2::after {
+  content: " 🌤️";
+  font-size: 1.4rem;
+  margin-left: 0.5rem;
+}
+
 .place-data {
   grid-column: 1;
 }
