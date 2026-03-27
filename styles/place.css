@@ -69,12 +69,6 @@
   grid-column: 3;
 }
 
-.place-weather h2::after {
-  content: " ⛅";
-  font-size: 1.4rem;
-  margin-left: 0.5rem;
-}
-
 .place-data dl,
 .place-weather dl {
   display: grid;
@@ -121,12 +115,7 @@
   object-fit: cover;
 }
 
-.weather-icon-mobile {
-  display: none;
-}
-
 .place-weather img {
-  display: none;
   margin-bottom: 0.75rem;
   width: 48px;
   height: 48px;
