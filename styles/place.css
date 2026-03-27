@@ -1,0 +1,270 @@
+/* Place Page Styles */
+
+.place-page {
+  max-width: 1200px;
+  margin: 1.5rem auto 0;
+  padding: 0 1rem 2rem;
+  position: relative;
+  z-index: 0;
+}
+
+.place-title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  border-bottom: 3px solid var(--primary-color);
+  padding-bottom: 1rem;
+  background: rgba(255, 255, 255, 0.98);
+  border-radius: 8px;
+  padding: 1.5rem 1rem 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.place-title h1 {
+  font-family: var(--font-heading);
+  font-size: 2.7rem;
+  margin: 0.5rem 0;
+  color: var(--primary-color);
+}
+
+.place-layout {
+  display: grid;
+  grid-template-columns: minmax(220px, 1fr) minmax(340px, 2fr) minmax(220px, 1fr);
+  gap: 1.2rem;
+  align-items: start;
+  margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-left: 4px solid var(--primary-color);
+  border-radius: 8px;
+  padding: 1.25rem;
+  transition: box-shadow 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.card:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.place-data h2,
+.place-weather h2,
+.place-description h2 {
+  margin: 0 0 1rem;
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+  font-weight: 700;
+}
+
+.place-data {
+  grid-column: 1;
+}
+
+.place-weather {
+  grid-column: 3;
+}
+
+.place-weather h2::after {
+  content: " ⛅";
+  font-size: 1.4rem;
+  margin-left: 0.5rem;
+}
+
+.place-data dl,
+.place-weather dl {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.place-data div,
+.place-weather div {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 0.5rem;
+}
+
+.place-data dt,
+.place-weather dt {
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.place-data dd,
+.place-weather dd {
+  margin: 0;
+  color: var(--text-color);
+}
+
+.place-hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.place-hero picture,
+.place-hero img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.weather-icon-mobile {
+  display: none;
+}
+
+.place-weather img {
+  display: none;
+  margin-bottom: 0.75rem;
+  width: 48px;
+  height: 48px;
+}
+
+.place-description {
+  grid-column: 1 / -1;
+  margin-top: 0.75rem;
+  position: relative;
+  z-index: 1;
+}
+
+.place-description p {
+  line-height: 1.7;
+  margin-top: 0.5rem;
+  color: var(--text-color);
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.gallery img {
+  flex: 1 1 calc(33.333% - 0.75rem);
+  min-width: 150px;
+  max-width: calc(33.333% - 0.75rem);
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 1.5rem 1rem;
+  margin-top: 2rem;
+  font-size: 0.95rem;
+}
+
+footer p {
+  margin: 0.3rem 0;
+}
+
+@media (max-width: 1024px) {
+  .place-page {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .place-title {
+    order: 1;
+  }
+
+  .place-hero {
+    position: relative;
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    margin-left: 0;
+    z-index: 1;
+    order: 2;
+    margin-bottom: 1.5rem;
+  }
+  .place-hero picture,
+  .place-hero img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+  }
+
+
+  .place-layout {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    order: 3;
+  }
+
+  .place-data {
+    grid-column: 1;
+  }
+
+  .place-weather {
+    grid-column: 1;
+  }
+
+  .place-description {
+    margin-top: 0.5rem;
+    order: 4;
+  }
+
+  .gallery img {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .place-title {
+    margin-bottom: 1.2rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .place-title h1 {
+    font-size: 2.2rem;
+  }
+
+  .place-page {
+    padding: 0 0.8rem 1.5rem;
+  }
+
+  .place-hero picture,
+  .place-hero img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+  }
+
+  .weather-icon-mobile {
+    display: block;
+    margin-bottom: 0.75rem;
+  }
+
+  .place-weather img {
+    display: block;
+  }
+
+  .place-data div,
+  .place-weather div {
+    grid-template-columns: auto 1fr;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+}
