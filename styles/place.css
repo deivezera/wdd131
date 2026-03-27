@@ -37,21 +37,6 @@
   z-index: 1;
 }
 
-.card {
-  background: rgba(255, 255, 255, 0.95);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  border-left: 4px solid var(--primary-color);
-  border-radius: 8px;
-  padding: 1.25rem;
-  transition: box-shadow 0.3s ease;
-  position: relative;
-  z-index: 1;
-}
-
-.card:hover {
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
-}
-
 .place-data h2,
 .place-weather h2,
 .place-description h2 {
@@ -69,10 +54,15 @@
   grid-column: 3;
 }
 
+.place-weather picture {
+  padding: 1rem;
+}
+
 .place-data dl,
 .place-weather dl {
   display: grid;
   gap: 0.6rem;
+  padding: 1rem;
 }
 
 .place-data div,
@@ -148,19 +138,6 @@
   height: auto;
   border-radius: 6px;
   object-fit: cover;
-}
-
-footer {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-  text-align: center;
-  padding: 1.5rem 1rem;
-  margin-top: 2rem;
-  font-size: 0.95rem;
-}
-
-footer p {
-  margin: 0.3rem 0;
 }
 
 @media (max-width: 1024px) {
