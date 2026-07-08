@@ -7,6 +7,9 @@
   
   --font-heading: 'Playfair Display', serif;
   --font-body: 'Roboto', sans-serif;
+
+  --temple-card-bg: white;
+  --temple-shadow: rgba(0, 0, 0, 0.1);
 }
 
 * {
@@ -41,13 +44,27 @@ header {
   margin-bottom: 1.25rem;
 }
 
+#menu-button {
+  display: block;
+  background: none;
+  border: none;
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
 nav {
+  display: none;
+  flex-direction: column;
+  background-color: var(--primary-color);
+  padding: 0.5rem 0;
+}
+
+nav.open {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  padding: 0.75rem;
-  background-color: rgba(0, 0, 0, 0.2);
 }
 
 nav a {
@@ -55,8 +72,7 @@ nav a {
   text-decoration: none;
   font-size: 1.1rem;
   font-weight: 700;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
+  padding: 0.75rem 1rem;
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
 }
 
@@ -67,8 +83,8 @@ nav a:hover, nav a:focus {
 }
 
 main {
-  max-width: 900px;
-  margin: 2.5rem auto;
+  max-width: 1080px;
+  margin: 2rem auto;
   padding: 0 1rem;
 }
 
@@ -162,4 +178,41 @@ footer p {
   font-size: 0.95rem;
   font-style: italic;
   margin-top: 1rem;
+}
+
+@media screen and (min-width: 500px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: relative;
+  }
+
+  #course-title {
+    margin-bottom: 0;
+    font-size: 1.75rem;
+  }
+
+  #menu-button {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    gap: 0.5rem;
+    padding: 0.75rem;
+  }
+
+  nav a {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+  }
+
+  nav a:hover {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+  }
 }
