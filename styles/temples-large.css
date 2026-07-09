@@ -10,10 +10,6 @@
     margin-bottom: 0;
   }
 
-  #menu-button {
-    display: none;
-  }
-
   nav {
     display: flex;
     flex-direction: row;
