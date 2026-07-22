@@ -46,7 +46,11 @@
 
       <section class="card">
         <h2>My Interests</h2>
-        <img src="images/curitiba.jpg" alt="Curitiba, Brasil" width="600" height="400" loading="lazy">
+        <picture>
+          <source type="image/webp" srcset="images/curitiba.webp">
+          <img src="images/curitiba.jpg" srcset="images/curitiba.jpg 600w" sizes="(max-width: 768px) 100vw, 50vw"
+            alt="Curitiba, Brasil" width="600" height="400" loading="lazy">
+        </picture>
         <p>I enjoy playing video games, basketball, and travel with my family. In my
           free time, I also love to play music, read, and continually learn new programming concepts.</p>
       </section>
