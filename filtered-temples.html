@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filtered Temple Album - Davi Szeremeta Zabroski</title>
+  <meta name="description" content="Filtered temple album displaying LDS temples from around the world">
+  <meta name="author" content="Davi Szeremeta Zabroski">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/filtered-temples.css">
+  <link rel="stylesheet" href="styles/filtered-temples-large.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Temple Album</h1>
+    <button id="menu-button" aria-label="Toggle menu">☰</button>
+    <nav id="menu">
+      <a href="#home" data-filter="home">Home</a>
+      <a href="#old" data-filter="old">Old</a>
+      <a href="#new" data-filter="new">New</a>
+      <a href="#large" data-filter="large">Large</a>
+      <a href="#small" data-filter="small">Small</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Temple Album</h2>
+    <div class="temple-grid" id="templeGrid"></div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Davi Szeremeta Zabroski Curitiba, Brasil</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
