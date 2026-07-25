@@ -148,7 +148,11 @@ function filterTemples(type) {
     old: () => temples.filter((temple) => getYear(temple.dedicated) < 1900),
     new: () => temples.filter((temple) => getYear(temple.dedicated) > 2000 || temple.dedicated === 'Still under construction'),
     large: () => temples.filter((temple) => temple.area > 90000),
-    small: () => temples.filter((temple) => temple.area < 10000)
+    small: () => temples.filter((temple) => temple.area < 10000),
+    brazilian: () => temples.filter((temple) => {
+      const value = `${temple.templeName} ${temple.location}`.toLowerCase();
+      return value.includes('brazil');
+    })
   };
 
   return filters[type] ? filters[type]() : temples;
