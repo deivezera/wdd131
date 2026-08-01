@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review Confirmation | WDD 131</title>
+  <meta name="description" content="Confirmation page showing completed product review details and review count." />
+  <meta name="author" content="Davi Szeremeta Zabroski" />
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/form.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <script src="scripts/getdates.js" defer></script>
+  <script src="scripts/review.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="form.html">Review Form</a>
+      <a href="review.html">Confirmation</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-intro">
+      <h1>Review Submitted</h1>
+      <p id="reviewIntro">Thank you for submitting your review. Your input is recorded and the number of completed reviews is tracked locally.</p>
+    </section>
+
+    <section class="confirmation-card">
+      <div class="review-count">
+        <p>Reviews completed on this browser:</p>
+        <p class="count" id="reviewsCompleted">0</p>
+      </div>
+
+      <a href="form.html" class="button">Submit another review</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Davi Szeremeta Zabroski Curitiba, Brasil</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+
+</html>

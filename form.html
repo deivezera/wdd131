@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Review Form | WDD 131</title>
+  <meta name="description" content="Product review form for WDD 131 with dynamic product selection and confirmation." />
+  <meta name="author" content="Davi Szeremeta Zabroski" />
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/form.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <script src="scripts/getdates.js" defer></script>
+  <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="form.html">Review Form</a>
+      <a href="review.html">Confirmation</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-intro">
+      <h1>Product Review</h1>
+      <p>Complete the form below to submit your product experience. The product list is populated dynamically and your review is confirmed on the next page.</p>
+    </section>
+
+    <section class="review-form-card">
+      <form id="productReviewForm" method="get" action="review.html">
+        <fieldset>
+          <legend>Share your feedback</legend>
+
+          <div class="form-group">
+            <label for="productName">Product Name</label>
+            <select id="productName" name="product" required>
+              <option value="" disabled selected>Select a Product ...</option>
+            </select>
+          </div>
+
+          <div class="form-group rating-group">
+            <p class="group-label">Overall Rating</p>
+            <div class="rating-options" role="radiogroup" aria-labelledby="ratingLabel">
+              <span id="ratingLabel" class="sr-only">Select a rating from 1 to 5 stars</span>
+              <label class="rating-label">
+                <input type="radio" id="rating-1" name="rating" value="1" required>
+                <span aria-hidden="true">☆</span>
+                <span class="star-text">1</span>
+              </label>
+              <label class="rating-label">
+                <input type="radio" id="rating-2" name="rating" value="2">
+                <span aria-hidden="true">☆</span>
+                <span class="star-text">2</span>
+              </label>
+              <label class="rating-label">
+                <input type="radio" id="rating-3" name="rating" value="3">
+                <span aria-hidden="true">☆</span>
+                <span class="star-text">3</span>
+              </label>
+              <label class="rating-label">
+                <input type="radio" id="rating-4" name="rating" value="4">
+                <span aria-hidden="true">☆</span>
+                <span class="star-text">4</span>
+              </label>
+              <label class="rating-label">
+                <input type="radio" id="rating-5" name="rating" value="5">
+                <span aria-hidden="true">☆</span>
+                <span class="star-text">5</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="installationDate">Date of Installation</label>
+            <input type="date" id="installationDate" name="installationdate" required>
+          </div>
+
+          <div class="form-group features-group">
+            <p class="group-label">Which features did you find useful in the product? <span class="optional">(Check all that apply)</span></p>
+            <label class="checkbox-label">
+              <input type="checkbox" id="featureDurability" name="features" value="Durability">
+              Durability
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" id="featureEase" name="features" value="Ease of Use">
+              Ease of Use
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" id="featurePerformance" name="features" value="Performance">
+              Performance
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" id="featureDesign" name="features" value="Design">
+              Design
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label for="reviewText">Written Review <span class="optional">(Optional)</span></label>
+            <textarea id="reviewText" name="review" rows="5" placeholder="Share your experience with the product."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="userName">Your Name <span class="optional">(Optional)</span></label>
+            <input type="text" id="userName" name="username" placeholder="Your name">
+          </div>
+
+          <div class="form-actions">
+            <input type="submit" value="Post Review">
+          </div>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Davi Szeremeta Zabroski Curitiba, Brasil</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+
+</html>
