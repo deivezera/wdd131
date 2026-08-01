@@ -16,7 +16,7 @@
   <script src="scripts/form.js" defer></script>
 </head>
 
-<body>
+<body class="review-theme">
   <header>
     <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
     <nav>
@@ -48,28 +48,28 @@
             <p class="group-label">Overall Rating</p>
             <div class="rating-options" role="radiogroup" aria-labelledby="ratingLabel">
               <span id="ratingLabel" class="sr-only">Select a rating from 1 to 5 stars</span>
-              <label class="rating-label">
+                  <label for="rating-1" class="rating-label">
                 <input type="radio" id="rating-1" name="rating" value="1" required>
                 <span aria-hidden="true">☆</span>
                 <span class="star-text">1</span>
               </label>
-              <label class="rating-label">
-                <input type="radio" id="rating-2" name="rating" value="2">
+              <label for="rating-2" class="rating-label">
+                <input type="radio" id="rating-2" name="rating" value="2" required>
                 <span aria-hidden="true">☆</span>
                 <span class="star-text">2</span>
               </label>
-              <label class="rating-label">
-                <input type="radio" id="rating-3" name="rating" value="3">
+              <label for="rating-3" class="rating-label">
+                <input type="radio" id="rating-3" name="rating" value="3" required>
                 <span aria-hidden="true">☆</span>
                 <span class="star-text">3</span>
               </label>
-              <label class="rating-label">
-                <input type="radio" id="rating-4" name="rating" value="4">
+              <label for="rating-4" class="rating-label">
+                <input type="radio" id="rating-4" name="rating" value="4" required>
                 <span aria-hidden="true">☆</span>
                 <span class="star-text">4</span>
               </label>
-              <label class="rating-label">
-                <input type="radio" id="rating-5" name="rating" value="5">
+              <label for="rating-5" class="rating-label">
+                <input type="radio" id="rating-5" name="rating" value="5" required>
                 <span aria-hidden="true">☆</span>
                 <span class="star-text">5</span>
               </label>
@@ -83,19 +83,19 @@
 
           <div class="form-group features-group">
             <p class="group-label">Which features did you find useful in the product? <span class="optional">(Check all that apply)</span></p>
-            <label class="checkbox-label">
+            <label for="featureDurability" class="checkbox-label">
               <input type="checkbox" id="featureDurability" name="features" value="Durability">
               Durability
             </label>
-            <label class="checkbox-label">
+            <label for="featureEase" class="checkbox-label">
               <input type="checkbox" id="featureEase" name="features" value="Ease of Use">
               Ease of Use
             </label>
-            <label class="checkbox-label">
+            <label for="featurePerformance" class="checkbox-label">
               <input type="checkbox" id="featurePerformance" name="features" value="Performance">
               Performance
             </label>
-            <label class="checkbox-label">
+            <label for="featureDesign" class="checkbox-label">
               <input type="checkbox" id="featureDesign" name="features" value="Design">
               Design
             </label>
