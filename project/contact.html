@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Davi Szeremeta Zabroski">
+    <meta
+      name="description"
+      content="Book a free consultation with Tibian Tech. Tell us about your business and we will reply within one business day."
+    >
+    <title>Contact | Tibian Tech</title>
+    <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles/site.css">
+    <script src="scripts/site.js" defer></script>
+    <script src="scripts/contact.js" defer></script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Tibian Tech home">
+          <img src="images/logo.svg" alt="Tibian Tech" width="176" height="40">
+        </a>
+        <button
+          id="nav-toggle"
+          class="nav-toggle"
+          type="button"
+          aria-label="Open menu"
+          aria-controls="site-nav"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+          <a class="btn btn-accent nav-cta" href="contact.html">Book a call</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-hero">
+        <div class="container">
+          <p class="eyebrow">Get started</p>
+          <h1>Let's talk about what you need.</h1>
+          <p class="lede">
+            Tell us a bit about your business. We will reply within one business day and suggest a
+            clear next step, no pressure and no jargon.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container form-layout">
+          <div class="form-intro">
+            <h2>Book a free consultation</h2>
+            <p>
+              The form takes about a minute. Everything you share stays between us and only helps
+              us prepare for our first conversation.
+            </p>
+            <ul>
+              <li>Free, no-jargon consultation</li>
+              <li>A proposal sized to your budget</li>
+              <li>Support that does not disappear</li>
+            </ul>
+          </div>
+
+          <div class="form-card">
+            <form id="inquiryForm" novalidate>
+              <fieldset>
+                <legend>Tell us about your business</legend>
+                <div class="form-grid two">
+                  <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" autocomplete="name" required>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="email">Work email</label>
+                    <input type="email" id="email" name="email" autocomplete="email" required>
+                  </div>
+
+                  <div class="form-group full">
+                    <label for="company">Company <span class="optional">(Optional)</span></label>
+                    <input type="text" id="company" name="company" autocomplete="organization">
+                  </div>
+
+                  <div class="form-group full">
+                    <label for="service">What do you need help with?</label>
+                    <select id="service" name="service" required>
+                      <option value="" selected disabled>Choose a service</option>
+                      <option value="Website development">Website development</option>
+                      <option value="Database setup and management">Database setup and management</option>
+                      <option value="AI solutions">AI solutions</option>
+                      <option value="MVP development">MVP development</option>
+                      <option value="Business intelligence">Business intelligence</option>
+                      <option value="Not sure yet">Not sure yet</option>
+                    </select>
+                  </div>
+
+                  <fieldset class="form-group full">
+                    <legend>Rough budget range</legend>
+                    <div class="radio-group">
+                      <label class="radio-option">
+                        <input type="radio" name="budget" value="Under $1,000" required>
+                        Under $1,000
+                      </label>
+                      <label class="radio-option">
+                        <input type="radio" name="budget" value="$1,000 to $5,000">
+                        $1,000 to $5,000
+                      </label>
+                      <label class="radio-option">
+                        <input type="radio" name="budget" value="$5,000 or more">
+                        $5,000 or more
+                      </label>
+                      <label class="radio-option">
+                        <input type="radio" name="budget" value="Not sure yet">
+                        Not sure yet
+                      </label>
+                    </div>
+                  </fieldset>
+
+                  <fieldset class="form-group full">
+                    <legend>What matters most to you? <span class="optional">(Optional)</span></legend>
+                    <div class="radio-group">
+                      <label class="radio-option">
+                        <input type="checkbox" name="priorities" value="Speed">
+                        Speed
+                      </label>
+                      <label class="radio-option">
+                        <input type="checkbox" name="priorities" value="Budget">
+                        Budget
+                      </label>
+                      <label class="radio-option">
+                        <input type="checkbox" name="priorities" value="Ongoing support">
+                        Ongoing support
+                      </label>
+                      <label class="radio-option">
+                        <input type="checkbox" name="priorities" value="Security">
+                        Security
+                      </label>
+                    </div>
+                  </fieldset>
+
+                  <div class="form-group full">
+                    <label for="message">Project details</label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows="6"
+                      placeholder="Tell us what you are trying to build or improve."
+                      required
+                    ></textarea>
+                  </div>
+                </div>
+
+                <p id="formError" class="form-error" hidden></p>
+                <div class="form-actions">
+                  <button class="btn btn-primary" type="submit">Send message</button>
+                </div>
+                <div id="confirmation" class="confirm-box" hidden></div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="section inquiries-section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Stored on this device</p>
+            <h2>Recent inquiries</h2>
+            <p class="lede">
+              Your submissions are saved in this browser so you can see that the form is working.
+              Nothing is sent to a server.
+            </p>
+          </div>
+          <div id="inquiryList" class="inquiry-list"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a class="brand" href="index.html">
+              <img src="images/logo.svg" alt="Tibian Tech" width="176" height="40">
+            </a>
+            <p>
+              Technology partners for growing businesses. Clear websites, data systems, and
+              practical AI.
+            </p>
+          </div>
+          <div class="footer">
+            <h3>Explore</h3>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer">
+            <h3>Get in touch</h3>
+            <ul class="footer-links">
+              <li><a href="contact.html">Book a free consultation</a></li>
+              <li><a href="references.html">References</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© <span id="currentyear"></span> Davi Szeremeta Zabroski. Tibian Tech project. All rights reserved.</p>
+          <p id="lastModified"></p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

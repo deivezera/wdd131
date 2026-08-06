@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Davi Szeremeta Zabroski">
+    <meta
+      name="description"
+      content="Explore Tibian Tech services: website development, database setup and management, AI solutions, MVP development, and business intelligence."
+    >
+    <title>Services | Tibian Tech</title>
+    <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles/site.css">
+    <script src="scripts/site.js" defer></script>
+    <script src="scripts/services.js" defer></script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Tibian Tech home">
+          <img src="images/logo.svg" alt="Tibian Tech" width="176" height="40">
+        </a>
+        <button
+          id="nav-toggle"
+          class="nav-toggle"
+          type="button"
+          aria-label="Open menu"
+          aria-controls="site-nav"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+          <a class="btn btn-accent nav-cta" href="contact.html">Book a call</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-hero">
+        <div class="container">
+          <p class="eyebrow">What we do</p>
+          <h1>End-to-end technology, right-sized for your business.</h1>
+          <p class="lede">
+            From your first website to a full data and AI stack, one partner builds it, sets it up
+            correctly, and keeps it running.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div id="serviceList" class="service-list"></div>
+        </div>
+      </section>
+
+      <section class="section" id="faq">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Common questions</p>
+            <h2>Answers before you ask.</h2>
+            <p class="lede">A few of the questions we hear most from business owners.</p>
+          </div>
+          <div id="faqList" class="faq-list"></div>
+        </div>
+      </section>
+
+      <section class="section cta-band">
+        <div class="container">
+          <div class="cta-card">
+            <h2>Not sure which service fits?</h2>
+            <p>
+              Tell us where you are stuck, and we will recommend a clear first step, no jargon and
+              no pressure.
+            </p>
+            <div class="cta-actions">
+              <a class="btn btn-accent" href="contact.html">Book a free consultation</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a class="brand" href="index.html">
+              <img src="images/logo.svg" alt="Tibian Tech" width="176" height="40">
+            </a>
+            <p>
+              Technology partners for growing businesses. Clear websites, data systems, and
+              practical AI.
+            </p>
+          </div>
+          <div class="footer">
+            <h3>Explore</h3>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer">
+            <h3>Get in touch</h3>
+            <ul class="footer-links">
+              <li><a href="contact.html">Book a free consultation</a></li>
+              <li><a href="references.html">References</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© <span id="currentyear"></span> Davi Szeremeta Zabroski. Tibian Tech project. All rights reserved.</p>
+          <p id="lastModified"></p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

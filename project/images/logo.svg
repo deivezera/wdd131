@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="176" height="40" viewBox="0 0 176 40" role="img" aria-label="Tibian Tech logo">
+  <rect x="2" y="4" width="32" height="32" rx="9" fill="#546498"/>
+  <rect x="10" y="11" width="16" height="4" rx="2" fill="#ffffff"/>
+  <rect x="17" y="11" width="4" height="20" rx="2" fill="#ffffff"/>
+  <rect x="25" y="22" width="5" height="9" rx="2.5" fill="#C8925B"/>
+  <text x="46" y="26" font-family="Inter, sans-serif" font-weight="800" font-size="17" letter-spacing="0.5" fill="#111827">TIBIAN</text>
+  <text x="46" y="37" font-family="Inter, sans-serif" font-weight="700" font-size="10" letter-spacing="2.6" fill="#C8925B">TECH</text>
+</svg>
